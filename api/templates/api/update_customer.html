@@ -1,0 +1,10 @@
+{% extends 'api/main.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form|crispy}}
+    <input type="submit" name="Update">
+</form>
+{% endblock %}
