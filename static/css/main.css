@@ -1,0 +1,39 @@
+#logo{
+}
+
+body{
+  background-color: #dcdde3;
+}
+
+
+#total-orders{
+  background-color: #626970;
+}
+
+
+#orders-delivered{
+  background-color: #626970;
+}
+
+#orders-pending{
+  background-color: #626970;
+}
+
+
+#main-customer-card{
+  background-color: #626970;
+  height: 250px;
+}
+
+#main-orders-card{
+  background-color: #626970;
+  height: 250px;
+}
+
+img {
+    max-width:8%;
+    height:auto;
+}
+
+#mapid { height: 500px;
+         width: 500px}
