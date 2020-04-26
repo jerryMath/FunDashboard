@@ -1,0 +1,41 @@
+{%  extends 'accounts/main.html' %}
+
+{% block content %}
+<style>
+  .table-title{
+    font-size: 20px;
+    color: #fff;
+  }
+</style>
+<br>
+<div class="row">
+	<div class="col-md">
+		<div class="card bg-dark card-body">
+			<h5 class="table-title text-center">Products</h5>
+		</div>
+		<div class="card card-body">
+			<table class="table table-borderless">
+			  <thead class="thead-dark">
+				<tr>
+				  <th scope="col">#</th>
+				  <th scope="col">Product</th>
+				  <th scope="col">Category</th>
+				  <th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				{% for i in products %}
+					<tr>
+					  <th scope="row">{{i.id}}</th>
+					  <td>{{i.name}}</td>
+					  <td>{{i.category}}</td>
+					  <td>{{i.price}}</td>
+					</tr>
+				{% endfor %}
+			  </tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
